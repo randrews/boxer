@@ -105,6 +105,12 @@ function fixcfg(cfg)
             cfg.outer_depth = cfg.inner_depth + cfg.material.thickness + cfg.material.margin
         end
     end
+
+    --------------------
+
+    if not cfg.split_columns then
+        cfg.split_columns = 0
+    end
 end
 
 function base(d, cfg)
